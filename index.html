@@ -27,9 +27,9 @@
     <div class="reveal">
       <div class="slides">
 	<section data-background='https://farm4.staticflickr.com/3630/3950391591_b51147bce2_b_d.jpg'>
-	  <h1>Matemáticas</h1>
+	  <h2>Matemáticas</h2>
 	  <h1 class='fragment'>¿Divertidas?</h1>
-	  <h1>con Perl6</h1>
+	  <h2>con Perl6</h2>
 	</section>
 	
 	<section data-background='https://farm6.staticflickr.com/5181/5614813544_b480316fcd_b_d.jpg'>
@@ -44,8 +44,40 @@
 	    ser divertidas.</aside>
 	</section>
 
-	
+	<section>
+	  <section><h1>Instala Rakudo Perl 6</h1>
+	    <h2><a
+	      href='http://rakudo.org'><code>rakudo.org</code></a></h2>
+	    <h3 class='fragment'>O algún repo</h3>
+	    <h3 class='fragment'>O <a href='https://github.com/tadzik/rakudobrew'><code>Rakudobrew</code></a></h3>
+	  </section>
 
+	  <section>
+	    <h2><code>docker pull jjmerelo/alpine-perl6</code></h2>
+	  </section>
+
+	  <section>
+	    <h1>Carga emacs</h1>
+	    <h2> Escape-x → shell </h2>
+	    <h2><code>perl6</code></h2>
+	    <h2 class='fragment'><code>sudo docker run -it jjmerelo/alpine-perl6</code></h2>
+	    <aside class='notes'>Con emacs se hace mucho más fácil
+	    sacar todo tipo de caracteres unicode. Es probable que en
+	    Atom y en el resto de los editores también. Pero se hace
+	    un infierno en el terminal. Y vamos a trabajar sobre todo
+	      con el terminal.</aside>
+	  </section>
+
+	  <section>
+	    <h1>Define la <a href='https://help.ubuntu.com/community/ComposeKey'>tecla <em>compose</em></a>
+	    </h1>
+	    <aside class='notes'>La tecla <em>compose nos va a
+	    permitir obtener muchas, bueno, composiciones de
+	      tecla. Por ejemplo flechas, fracciones, cosas así.</em>
+	    </aside>
+	  </section>
+	</section>
+	
 
 	<!-- Credits -->
 	<section>
@@ -64,22 +96,22 @@
       </div>
     </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
-
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    
+    <script>
+     // More info https://github.com/hakimel/reveal.js#configuration
+     Reveal.initialize({
+       history: true,
+       width: '90%',
+       // More info https://github.com/hakimel/reveal.js#dependencies
+       dependencies: [
+	 { src: 'plugin/markdown/marked.js' },
+	 { src: 'plugin/markdown/markdown.js' },
+	 { src: 'plugin/notes/notes.js', async: true },
+	 { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+       ]
+     });
+    </script>
+  </body>
 </html>
