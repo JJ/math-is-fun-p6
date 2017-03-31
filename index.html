@@ -171,6 +171,24 @@ if ( $Benoît( .01+.1i )[1000] < 1 ) {
 	      sola variable un generador de secuencias infinitas</aside>
 	  </section>
 	</section>
+
+
+	<section
+	  data-background='https://farm7.staticflickr.com/6192/6122843175_477a625102_o_d.jpg'>
+	  <section>
+	    <h1>Vectores everywhere</h1>
+	    <pre><code>our @numbers = flat 2..10 , &lt;A J Q K></code></pre>
+	    <pre><code>our @poker-cards =   @numbers X <♥ ♦ ♣ ♠></code></pre>
+	    <img src='img/cards.png'>
+	  </section>
+
+	  <section>
+	    <pre><code>our @poker-cards = @numbers X~ <♥ ♦ ♣ ♠> </code></pre>
+	    <pre class='fragment'><code>@poker-cards.pick(5)</code></pre>
+	    <pre class='fragment'><code>our @shuffle = @poker-cards.pick(*)</code></pre>
+	  </section>
+	</section>
+	
 	<!-- Credits -->
 	<section>
 	  <h2>Créditos</h2>
@@ -190,6 +208,9 @@ if ( $Benoît( .01+.1i )[1000] < 1 ) {
 	    <li><a
 	    href='https://www.flickr.com/photos/master-phillip/4443686026/'>Mandelbrot
 	      por Phil Reed</a></li>
+	    <li><a
+	href='https://www.flickr.com/photos/pixx0ne/6122843175/'>Flechas
+	      en la carretera de Riccardo Romano</a></li>
 	    <li>Resto de las fotos del autor</li>
 	  </ul>
 	</section>
