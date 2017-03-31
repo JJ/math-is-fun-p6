@@ -199,14 +199,15 @@ if ( $Benoît( .01+.1i )[1000] < 1 ) {
 
 	  <section>
 	    <pre><code>$hand ∪ set( @poker-cards.pick(5))</code></pre>
-	    <pre class='fragment'>$hand ∩ set( @poker-cards.pick(5))</code></pre>
+	    <pre class='fragment'><code>$hand ∩ set( @poker-cards.pick(5))</code></pre>
 	  </section>
 
 	  <section>
 	    <pre><code>#!/usr/bin/env p6
-
-sub MAIN( Str $doc1 = 'doc1', Str $doc2 = 'doc2' ) {
-    say ( set($doc1.IO.lines) (^)  set($doc2.IO.lines) );
+sub MAIN( Str $doc1 = 'doc1',
+	  Str $doc2 = 'doc2' ) {
+    say ( set($doc1.IO.lines)
+     (^)  set($doc2.IO.lines) );
 }</code></pre>
 	  </section>
 	</section>
